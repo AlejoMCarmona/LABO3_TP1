@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío de formulario (SIMULACIÓN)</title>
+</head>
+
+<!--Esta página no fue hecha por mí, sino que es un recurso que vimos durante la cursada para simular el envío de un formulario-->
+
+<body>
+    <header>
+        <h1>Recetas fáciles para tu día a día</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="contacto.html">Solicitá una receta!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <p>&nbsp;</p>
+        <h1>
+            <font size="+1">La siguiente información ha sido enviada (SIMULACIÓN):</font>
+        </h1>
+
+        <table border="1" width="226">
+            <tr>
+                <th align="center">Campo de formulario</th>
+                <th align="center">Valor de campo</th>
+            </tr>
+
+            <script language="javascript">
+                let args = location.search.substr(1).split('&');
+                for (let i = 0; i < args.length; ++i) {
+                    let parts = args[i].split('=');
+                    if (parts != null) {
+                        let field = parts[0];
+                        let value = parts[1];
+                        if (value == null) {
+                            value = "null"
+                        }
+                        else {
+                            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                        }
+
+                        document.writeln('<tr><td align="center">' + field + '</td>');
+                        document.writeln('<td align="center">' + value + '</td></tr>');
+                    }
+                }
+            </script>
+        </table>
+    </main>
+</body>
+
+<footer>
+    <p align="center">Recetas fáciles &copy; 2024</p>
+</footer>
+
+</html>

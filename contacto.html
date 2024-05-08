@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Recetas fáciles para tu día a día</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="contacto.html">Solicitá una receta!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Solicitar receta</h2>
+
+        <form action="show_data.html" style="width: 20rem;"> <!--Los estilos 'inline' son una mala práctica, pero hago este pequeño agregado hasta que veamos CSS en la cursada-->
+            <label for="nombre" class="center">Nombre:</label> <input required type="text" name="nombre" placeholder="Nombre...""> <br>
+            <label for="apellido" class="center">Apellido: </label> <input required type="text" name="apellido" placeholder="Apellido..."> <br>
+            <label for="direccion" class="center">País: </label> <input required type="text" name="pais" placeholder="Pais..."> <br>
+            <label for="fecha_de_nacimiento" class="center">Fecha de nacimiento:</label> <input required type="date" name="fecha_de_nacimiento" placeholder="Fecha de nacimiento..."> <br>
+            <textarea required name="receta" cols="40" rows="10" placeholder="¿Qué receta quieres que preparemos?"></textarea>
+            <fieldset required>
+                <legend>¿Eres vegano?</legend>
+                <input required type="radio" name="veganismo" value="no"> No
+                <input required type="radio" name="veganismo" value="si"> Sí
+            </fieldset>
+            <fieldset>
+                <legend>¿Eres celíaco?</legend>
+                <input required type="radio" name="celiaquia" value="no"> No
+                <input required type="radio" name="celiaquia" value="si"> Sí
+            </fieldset>
+            <fieldset>
+                <legend>¿Eres diabético?</legend>
+                <input required type="radio" name="diabetes" value="no"> No
+                <input required type="radio" name="diabetes" value="si"> Sí
+            </fieldset>
+            <fieldset>
+                <legend>¿Eres hipertenso?</legend>
+                <input required type="radio" name="hipertension" value="no"> No
+                <input required type="radio" name="hipertension" value="si"> Sí
+            </fieldset>
+            <textarea name="extra" cols="40" rows="10" placeholder="Ingrese alguna nota extra que sea necesaria..."></textarea>
+            <hr>
+            <button type="submit" value="Enviar">Enviar!</button>
+        </form>
+    </main>
+
+    <footer>
+        <p align="center">Recetas fáciles &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envío de formulario (SIMULACIÓN)</title>
+    <link rel="stylesheet" href="styles/styles-show_data.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Red+Hat+Display&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <!--Esta página no fue hecha por mí, sino que es un recurso que vimos durante la cursada para simular el envío de un formulario-->
 
 <body>
     <header>
-        <h1>Recetas fáciles para tu día a día</h1>
-        <nav>
+        <h1 class="main-title center-text">Recetas fáciles para tu día a día</h1>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Recetas</a></li>
@@ -21,12 +25,9 @@
     </header>
     
     <main>
-        <p>&nbsp;</p>
-        <h1>
-            <font size="+1">La siguiente información ha sido enviada (SIMULACIÓN):</font>
-        </h1>
+        <h2 class="center-text subtitle margin-separator-2">La siguiente información ha sido enviada (SIMULACIÓN):</h2>
 
-        <table border="1" width="226">
+        <table id="information-sent-table" class="center-table margin-separator-1">
             <tr>
                 <th align="center">Campo de formulario</th>
                 <th align="center">Valor de campo</th>
@@ -55,8 +56,8 @@
     </main>
 </body>
 
-<footer>
-    <p align="center">Recetas fáciles &copy; 2024</p>
+<footer class="margin-separator-2">
+    <p class="center-text">Recetas fáciles &copy; 2024</p>
 </footer>
 
 </html>

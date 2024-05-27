@@ -1,0 +1,185 @@
+:root {
+    --background-color: #EBFFF8;
+    --primary-color: #0C090D;
+    --secondary-color: #ECA400;
+    --family-font-main-title: "Amatic SC", sans-serif;
+    --familty-font-subtitle: "Titillium Web", sans-serif;
+    --family-font-paragraph: "Red Hat Display", sans-serif;
+    --font-size-paragraph: 1.1rem;
+}
+
+/*general styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    padding: 0rem 2rem;
+}
+/*end general styles*/
+
+/*text styles*/
+.main-title {
+    font-family: var(--family-font-main-title);
+    font-size: 5rem;
+    font-style: normal;
+    background-color: var(--secondary-color);
+    padding: 1rem 0 0 0;
+}
+
+.main-subtitle,
+.subtitle,
+.mini-subtitle {
+    font-family: var(--familty-font-subtitle);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.main-subtitle {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.mini-subtitle {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: var(--family-font-paragraph);
+    color: var(--primary-color);
+    font-size: var(--font-size-paragraph);
+    width: 60%;
+}
+/*end text styles*/
+
+/*images and videos styles*/
+#pizza-img {
+    width: 70%;
+    border-radius: .5rem;
+}
+
+#pizza-video-loop {
+    width: 60%;
+}
+
+#pizza-video {
+    width: 60%;
+    height: 50;
+}
+/*end images and videos styles*/
+
+/*navbar styles*/
+.navbar {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    float: left;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar ul a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+/*end navbar styles*/
+
+/*section list styles*/
+.section-list ul, ol {
+    list-style-position: inside;
+    width: 40%; 
+}
+
+.section-list li, a {
+    color: var(--primary-color);
+    font-size: var(--font-size-paragraph);
+    font-family: var(--family-font-paragraph);
+}
+.section-list a {
+    text-decoration: none;
+}
+/*end section list styles*/
+
+/*content-table styles*/
+#content-table {
+    width: 30%;
+    border: .1rem solid var(--primary-color);
+    padding: 1rem;
+}
+/*end content-table styles*/
+
+/*comments-table styles*/
+.comments-table {
+    border: .2rem solid black;
+    width: 50%;
+}
+
+.comments-table th, td {
+    padding: .4rem;
+}
+
+.comments-table tr {
+    font-family: var(--family-font-paragraph);
+    font-size: var(--font-size-paragraph);
+    text-align: center;
+    padding: .5rem;
+}
+
+.comments-table tr:nth-child(odd) {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+/*comments-table styles*/
+
+/*footer styles*/
+footer {
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    width: 100%;
+    font-weight: 800;
+}
+/*footer styles*/
+
+/*utils*/
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-separator-2 {
+    margin-top: 2rem;
+}
+
+.margin-separator-1 {
+    margin-top: 1rem;
+}
+/*end utils*/

@@ -1,0 +1,164 @@
+:root {
+    --background-color: #EBFFF8;
+    --primary-color: #0C090D;
+    --secondary-color: #ECA400;
+    --family-font-main-title: "Amatic SC", sans-serif;
+    --familty-font-subtitle: "Titillium Web", sans-serif;
+    --family-font-paragraph: "Red Hat Display", sans-serif;
+    --font-size-paragraph: 1.1rem;
+}
+
+/*general styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    padding: 0rem 2rem;
+}
+/*end general styles*/
+
+/*navbar styles*/
+.navbar {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    float: left;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar ul a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+/*end navbar styles*/
+
+/*text styles*/
+.main-title {
+    font-family: var(--family-font-main-title);
+    font-size: 5rem;
+    font-style: normal;
+    background-color: var(--secondary-color);
+    padding: 1rem 0 0 0;
+}
+
+.main-subtitle,
+.subtitle,
+.mini-subtitle {
+    font-family: var(--familty-font-subtitle);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.main-subtitle {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.mini-subtitle {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: var(--family-font-paragraph);
+    color: var(--primary-color);
+    font-size: var(--font-size-paragraph);
+    width: 60%;
+}
+/*end text styles*/
+
+#form-recipes {
+    border: .1rem solid var(--primary-color);
+    padding: 2rem;
+    width: 20%;
+}
+
+#form-recipes label, fieldset, legend {
+    font-family: var(--family-font-paragraph);
+}
+
+#form-recipes input, fieldset, textarea {
+    margin-bottom: .5rem;
+}
+
+#form-recipes input {
+    height: 1.2rem;
+}
+
+#form-recipes input[type=text], input[type=date] {
+    width: 100%;
+}
+
+#form-recipes textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
+#submit-button {
+    background-color: var(--secondary-color);
+    border-radius: .4rem;
+    font-family: var(--family-font-paragraph);
+    font-size: var(--font-size-subtitle);
+    width: 100%;
+    height: 3rem;
+}
+
+#submit-button:active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/*footer styles*/
+footer {
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    width: 100%;
+    font-weight: 800;
+}
+/*footer styles*/
+
+/*utils*/
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-separator-2 {
+    margin-top: 2rem;
+}
+
+.margin-separator-1 {
+    margin-top: 1rem;
+}
+/*end utils*/

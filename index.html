@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receta</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Red+Hat+Display&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Recetas fáciles para tu día a día</h1>
-        <nav>
+        <h1 class="main-title center-text">Recetas fáciles para tu día a día</h1>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Recetas</a></li>
@@ -19,108 +23,118 @@
     
     <main>
         <article>
-            <h2>Pizza napolitana</h2>
-            <img src="media/pizza-napolitana.jpg" alt="Pizza napolitana" width="800">
-            <p>Para esos momentos donde tienes ganas de comer algo muy rico pero sin tener que cocinar tanto, una pizza es una gran opción.</p>
+            <h2 class="main-subtitle center-text margin-separator-2">Pizza napolitana</h2>
+            <img src="media/pizza-napolitana.jpg" alt="Pizza napolitana" class="center margin-separator-2" id="pizza-img">
+            <p class="center margin-separator-1">Para esos momentos donde tienes ganas de comer algo muy rico pero sin tener que cocinar tanto, una pizza es una gran opción.</p>
+            
+            <section id="content-table" class="section-list center margin-separator-2">
+                <h3 class="center-text mini-subtitle">Tabla de contenidos:</h3>
+                    <ol class="center margin-separator-1">
+                        <li><a href="#history">Un poco de historia</a></li>
+                        <li><a href="#ingredients">Ingredientes</a></li>
+                        <li><a href="#steps">Pasos</a></li>
+                        <li><a href="#comments">Comentarios</a></li>
+                    </ol>
+            </section>
 
-            <h3>Tabla de contenidos:</h3>
-            <ul>
-                <li><a href="#historia">Un poco de historia</a></li>
-                <li><a href="#ingredientes">Ingredientes</a></li>
-                <li><a href="#pasos">Pasos</a></li>
-                <li><a href="#comentarios">Comentarios</a></li>
-            </ul>
+            <section id="history">
+                <h3 class="center-text subtitle margin-separator-2">Un poco de historia</h3>
 
-            <h3 id="historia">Un poco de historia</h3>
+                <video src="media/pizza.mp4" autoplay loop alt="pizza" title="Pizza - video extraído del mostrado más abajo" id="pizza-video-loop" class="center margin-separator-2"></video> <!--Obtenido directamente del video de Youtube-->
 
-            <video src="media/pizza.mp4" autoplay loop width="800" alt="pizza" title="Pizza - video extraído del mostrado más abajo"></video> <!--Obtenido directamente del video de Youtube-->
+                <p class="center margin-separator-2">
+                    La pizza napolitana es un plato que representa la cultura y la gastronomía italiana, y forma parte de su identidad. En la ciudad de Nápoles, donde se originó, es casi una institución y parte indiscutida de la cultura local.<br>
+                    Este tipo de pizza se suele preparar con ingredientes simples y frescos. Una masa básica, salsa de tomate natural, queso mozzarella, albahaca fresca y aceite de oliva.<br>
+                    Una de las mayores particularidades que definen este tipo de plato es que a menudo hay más salsa que queso. Esto suele dejar la superficie de la pizza húmeda o un poco empapada. Por ese motivo, las pizzas napolitanas son generalmente bastante pequeñas, haciéndolas más cercanas al tamaño de una ración por persona.
+                    <br><br>
+                    En el siguiente video tenemos un poco más de información acerca de la pizza napolitana: 
+                </p>
 
-            <p>
-                La pizza napolitana es un plato que representa la cultura y la gastronomía italiana, y forma parte de su identidad. En la ciudad de Nápoles, donde se originó, es casi una institución y parte indiscutida de la cultura local.<br>
-                Este tipo de pizza se suele preparar con ingredientes simples y frescos. Una masa básica, salsa de tomate natural, queso mozzarella, albahaca fresca y aceite de oliva.<br>
-                Una de las mayores particularidades que definen este tipo de plato es que a menudo hay más salsa que queso. Esto suele dejar la superficie de la pizza húmeda o un poco empapada. Por ese motivo, las pizzas napolitanas son generalmente bastante pequeñas, haciéndolas más cercanas al tamaño de una ración por persona.
-                <br><br>
-                En el siguiente video tenemos un poco más de información acerca de la pizza napolitana: 
-            </p>
+                <iframe id="pizza-video" class="center margin-separator-2" width="800" height="600" src="https://www.youtube.com/embed/1-RxrFtHSu8" title="La madre de todas las pizzas: la napolitana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/1-RxrFtHSu8" title="La madre de todas las pizzas: la napolitana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="center center-text margin-separator-2">Entonces, ya sea que quieras recordar tus raíces o experimentar la gastronomía de otras culturas, vamos a ponernos manos a la obra.</p>
+            </section>
+            
+            <section id="ingredients" class="section-list margin-separator-2">
+                <h3 class="center center-text subtitle">Ingredientes</h3>
+                <ul class="center margin-separator-1">
+                    <li>Medio kilo de tomates</li>
+                    <li>Sal</li>
+                    <li>Pimienta</li>
+                    <li>Agua</li>
+                    <li>200 gramos de mozzarella (puede ser queso de almendras si quieres una opción vegana)</li>
+                    <li>Aceite de oliva extra virgen</li>
+                    <li>Albahaca fresca</li>
+                </ul>
+            </section>
 
-            <p>Entonces, ya sea que quieras recordar tus raíces o experimentar la gastronomía de otras culturas, vamos a ponernos manos a la obra.</p>
+            <section id="steps" class="margin-separator-2 section-list">
+                <h3 class="center-text subtitle">Pasos</h3>
 
-            <h3 id="ingredientes">Ingredientes:</h3>
-            <ul>
-                <li>Medio kilo de tomates</li>
-                <li>Sal</li>
-                <li>Pimienta</li>
-                <li>Agua</li>
-                <li>200 gramos de mozzarella (puede ser queso de almendras si quieres una opción vegana)</li>
-                <li>Aceite de oliva extra virgen</li>
-                <li>Albahaca fresca</li>
-            </ul>
+                <h4 class="center-text mini-subtitle margin-separator-2">Salsa:</h4>
+                <ol class="center margin-separator-1">          
+                    <li>Antes que nada poner a precalentar el horno a 250°C, temperatura máxima. También se puede usar una piedra refractaria.</li>
+                    <li>Poner agua a hervir en una cacerola, colocar los tomates y dejarlos por unos 5 minutos hasta que se desprenda la cáscara</li>
+                    <li>Pelar los tomates y machacarlos en un bol con un poco de sal y pimienta, y un chorrito de aceite de oliva. Cocinar por unos 10 minutos en una cacerola a fuego medio. Dejar que tome temperatura ambiente</li>
+                </ol>
+        
+                <h4 class="center-text mini-subtitle margin-separator-1">Pizza:</h4>
+                <ol class="center margin-separator-1">          
+                    <li>Dividir el bollo de masa en dos y sobre una mesada levemente enharinada estirarla siempre de adentro hacia afuera y cuidando que quede un borde sin estirar.</li>
+                    <li>Colocar las pizzas en una bandeja de horno levemente enharinada y esparcir la salsa de tomate de adentro hacia afuera, dejando un borde alrededor sin salsa. No poner demasiada salsa porque puede humedecer mucho la masa.</li>
+                    <li>Desmenuzar la mozzarella y colocar encima de la salsa de tomate.</li>
+                    <li>Rociar con un poco de aceite de oliva y llevar las pizzas al horno.</li>
+                    <li>Hornear unos 3 o 4 minutos a horno bien fuerte.</li>
+                    <li>Retirar del horno y decorar con hojas de albahaca fresca. Comer en el momento.</li>
+                </ol>
+            </section>
     
-            <h3 id="pasos">Pasos:</h3>
-    
-            <h4>Salsa:</h4>
-            <ol>          
-                <li>Antes que nada poner a precalentar el horno a 250°C, temperatura máxima. También se puede usar una piedra refractaria.</li>
-                <li>Poner agua a hervir en una cacerola, colocar los tomates y dejarlos por unos 5 minutos hasta que se desprenda la cáscara</li>
-                <li>Pelar los tomates y machacarlos en un bol con un poco de sal y pimienta, y un chorrito de aceite de oliva. Cocinar por unos 10 minutos en una cacerola a fuego medio. Dejar que tome temperatura ambiente</li>
-            </ol>
-    
-            <h4>Pizza:</h4>
-            <ol>          
-                <li>Dividir el bollo de masa en dos y sobre una mesada levemente enharinada estirarla siempre de adentro hacia afuera y cuidando que quede un borde sin estirar.</li>
-                <li>Colocar las pizzas en una bandeja de horno levemente enharinada y esparcir la salsa de tomate de adentro hacia afuera, dejando un borde alrededor sin salsa. No poner demasiada salsa porque puede humedecer mucho la masa.</li>
-                <li>Desmenuzar la mozzarella y colocar encima de la salsa de tomate.</li>
-                <li>Rociar con un poco de aceite de oliva y llevar las pizzas al horno.</li>
-                <li>Hornear unos 3 o 4 minutos a horno bien fuerte.</li>
-                <li>Retirar del horno y decorar con hojas de albahaca fresca. Comer en el momento.</li>
-            </ol>
+            <section id="comments" class="margin-separator-2">
+                <h3 class="center-text subtitle">Comentarios de usuarios que han hecho la receta</h3>
 
-            <h3 id="comentarios">Comentarios de usuarios que han hecho la receta:</h3>
-
-            <table border="2">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Sabor</th>
-                        <th>¿La hiciste veggie?</th>
-                        <th>Precio total siguiendo esta receta</th>
-                        <th>Comentario</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>alee_perez</td>
-                        <td>7.5</td>
-                        <td>No</td>
-                        <td>3100ARS</td>
-                        <td>La pizza quedó riquísima y gastamos mucho menos que comprándola por delivery!</td>
-                        <td>07/01/23</td>
-                    </tr>
-                    <tr>
-                        <td>arbol_hoja_salto_luz</td>
-                        <td>9</td>
-                        <td>No</td>
-                        <td>6400ARS</td>
-                        <td>Exquisita</td>
-                        <td>12/03/24</td>
-                    </tr>
-                    <tr>
-                        <td>alejo_carmona</td>
-                        <td>8</td>
-                        <td>Sí</td>
-                        <td>9000ARS</td>
-                        <td>Se me quemó un poco pero fue culpa mía, a pesar de eso muy rica. Gracias por compartir esta receta!</td>
-                        <td>07/05/24</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="comments-table center-table margin-separator-2">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Sabor</th>
+                            <th>¿La hiciste veggie?</th>
+                            <th>Precio total siguiendo esta receta</th>
+                            <th>Comentario</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>alee_perez</td>
+                            <td>7.5</td>
+                            <td>No</td>
+                            <td>3100ARS</td>
+                            <td>La pizza quedó riquísima y gastamos mucho menos que comprándola por delivery!</td>
+                            <td>07/01/23</td>
+                        </tr>
+                        <tr>
+                            <td>arbol_hoja_salto_luz</td>
+                            <td>9</td>
+                            <td>No</td>
+                            <td>6400ARS</td>
+                            <td>Exquisita</td>
+                            <td>12/03/24</td>
+                        </tr>
+                        <tr>
+                            <td>alejo_carmona</td>
+                            <td>8</td>
+                            <td>Sí</td>
+                            <td>9000ARS</td>
+                            <td>Se me quemó un poco pero fue culpa mía, a pesar de eso muy rica. Gracias por compartir esta receta!</td>
+                            <td>07/05/24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </article>
     </main>
 
-    <aside>
+    <!-- <aside>
         <nav>
             <ul>
                 <li><a href="#">Cocina italiana</a>
@@ -138,10 +152,10 @@
                 </li>
             </ul>
         </nav>
-    </aside>
+    </aside> -->
 
-    <footer>
-        <p align="center">Recetas fáciles &copy; 2024</p>
+    <footer class="margin-separator-2">
+        <p class="center-text">Recetas fáciles &copy; 2024</p>
     </footer>
 </body>
 </html>
